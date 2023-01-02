@@ -1,14 +1,3 @@
-#!/usr/bin/env bash
-
-set -eux
-
-cd $(dirname $0)/derive
-
-cargo publish
-
-cd ..
-
-# Let the crates.io index figure out we've published `derive_arbitrary` already.
-sleep 5
-
-cargo publish
+version https://git-lfs.github.com/spec/v1
+oid sha256:752e221bdd960666b127df15effddd3d789ff3f1762498961fc79ae99f9a27f1
+size 182
